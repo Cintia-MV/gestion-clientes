@@ -1,0 +1,44 @@
+@startuml gic
+title Gestor Inteligente de Clientes (GIC)
+
+class Cliente {
+    - id : str
+    - nombre : str
+    - email : str
+    - telefono : str
+    - direccion : str
+    + to_dict()
+}
+
+class ClienteRegular {
+    - descuento : int
+}
+
+class ClientePremium {
+    - descuento : int
+}
+
+class ClienteCorporativo {
+    - empresa : str
+}
+
+class GestorClientes {
+    - ruta : str
+    - clientes : list
+    + agregar_cliente(cliente)
+    + listar_clientes()
+    + buscar_cliente()
+    + editar_cliente_por_indice()
+    + eliminar_cliente_por_indice()
+}
+
+class DatosInvalidosError
+
+Cliente <|-- ClienteRegular
+Cliente <|-- ClientePremium
+Cliente <|-- ClienteCorporativo
+
+GestorClientes --> Cliente : gestiona
+Cliente ..> DatosInvalidosError : lanza
+
+@enduml
