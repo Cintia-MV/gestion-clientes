@@ -14,7 +14,7 @@ El sistema está organizado en las siguientes capas:
 
 - **main.py** -> Interfaz de usuario por consola. 
 
-![alt text](image-1.png)
+![alt text](docs\image-1.png)
 ABP4/
 │
 ├── main.py
@@ -70,4 +70,4 @@ Todos heredan de la clase padre `Cliente`
 ## Ejecición del sistema
 Desde la raiz del proyecto ejecutar: main.py
 
-![alt text](image.png)
+![alt text](docs\image.png)
