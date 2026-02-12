@@ -14,7 +14,7 @@ El sistema está organizado en las siguientes capas:
 
 - **main.py** -> Interfaz de usuario por consola. 
 
-
+![alt text](image-1.png)
 ABP4/
 │
 ├── main.py
